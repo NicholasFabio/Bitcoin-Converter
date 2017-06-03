@@ -1,6 +1,8 @@
 /*
  * CardLayoutDemo.java
- *
+ * This is another class i found for ideas to implement the GUI. I have
+ * chosen to use the grid bag layout. The projects code can be found in the surface 
+ * panel class file. 
  */
 import java.awt.*;
 import java.awt.event.*;

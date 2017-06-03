@@ -93,7 +93,8 @@ public class SurfacePanel extends JPanel{
         constraintsP2.anchor = GridBagConstraints.CENTER;
         panel2.add(btnCovertToBitcoin, constraints);
         
-        
+        // Add an action listener to the button being clicked, capture the input and 
+        // process the required output
         btnConvertToZAR.addActionListener(new ActionListener() {
 			
 			@Override
@@ -107,6 +108,8 @@ public class SurfacePanel extends JPanel{
 			}
 		});
         
+        // Add an action listener to the button being clicked, capture the input and 
+        // process the required output
         btnCovertToBitcoin.addActionListener(new ActionListener() {
 			
 			@Override
@@ -130,7 +133,12 @@ public class SurfacePanel extends JPanel{
 		
 	}
 		
-	
+	/*
+	 * Convert to a bitcoin value
+	 * @param coinCost current price of a bitcoin in (ZAR)
+	 * @param randsForBitcoin amount to spends on bitcoin (ZAR)
+	 * @return bitcoin value obtained
+	 */
 	public static double convertToBitcoin(int coinCost, double randsForbitcoin){
 		double returnValue= 0.0;
 		
@@ -140,6 +148,14 @@ public class SurfacePanel extends JPanel{
 		
 	}
 	
+	
+
+	/*
+	 * Convert to ZAR from bitcoins in hand
+	 * @param coinCost current price of a bitcoin in (ZAR)
+	 * @param bitcoins current amount of bitcoins on hand
+	 * @return ZAR value obtained
+	 */
 	public static double convertToRands(double bitcoins, Integer coinCost){
 		double returnValue= 0.0;
 		

@@ -26,7 +26,9 @@ public class Main extends JFrame{
 	
 	public static void main(String[] args) {
 		
-		bitcoinWindow Frame = new bitcoinWindow() ;       
+		// create the frame for the application
+		bitcoinWindow Frame = new bitcoinWindow() ;
+		// set default setting and attributes 
 		Frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE) ;
 		Frame.setTitle("Bitcoin Converter");
 		Frame.setLocationRelativeTo(null) ;
